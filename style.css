@@ -55,7 +55,7 @@ img:hover{
     margin: 2rem;
     gap: 2rem;
     font-size: 2rem;
-    
+
 }
 #user-score,#comp-score{
     font-size: 4rem;
@@ -77,4 +77,55 @@ img:hover{
     padding: 1.1rem;
     font-size: 25px;
     transition-duration: 1s;
+}
+@media screen and (max-width: 481px) {
+    body {
+        background: linear-gradient(90deg, #03181F, #319cb5, #ccf5fe);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 4rem; /* Adjusting for smaller screens */
+    }
+
+    .choices {
+        flex-direction: column; /* Stack the choices vertically */
+        gap: 2rem; /* Reduce the gap for better spacing */
+    }
+
+    .choice {
+        height: 150px; /* Slightly smaller for mobile screens */
+        width: 150px;
+        margin: 5px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .scoreboard {
+        flex-direction: column; /* Stack scoreboard items vertically */
+        gap: 1rem;
+        font-size: 1.5rem; /* Adjust text size */
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem; /* Reduce the size of scores */
+    }
+
+    .msg-container {
+        margin-top: 2rem;
+    }
+
+    #msg {
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    #msg:hover {
+        font-size: 18px;
+        padding: 1rem;
+    }
 }
